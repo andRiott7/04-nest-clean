@@ -3,8 +3,6 @@ import { ConfigService } from "@nestjs/config";
 import { JwtModule } from "@nestjs/jwt";
 import { PassportModule } from "@nestjs/passport";
 import { Env } from "src/env";
-import { AuthenticateController } from "src/controllers/authenticate-controller";
-
 @Module({
   imports: [
     PassportModule,
@@ -23,6 +21,5 @@ import { AuthenticateController } from "src/controllers/authenticate-controller"
       },
     }),
   ],
-  controllers: [AuthenticateController],
 })
 export class AuthModule { }
