@@ -7,6 +7,11 @@ import { DatabaseModule } from '@/infra/database/database.module';
 
 @Module({
   imports: [DatabaseModule],
-  controllers: [CreateAccountController, AuthenticateController, CreateQuestionController, FetchRecentQuestionController],
+  controllers: [
+    CreateAccountController,
+    AuthenticateController,
+    CreateQuestionController,
+    FetchRecentQuestionController
+  ],
 })
 export class HttpModule { }
